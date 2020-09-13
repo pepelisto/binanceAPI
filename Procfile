@@ -1,1 +1,1 @@
-web: gunicorn binance_FLask_API.wsgi --log-file -
+web: gunicorn app:app
