@@ -17,6 +17,10 @@ def order(side, quantity, symbol, order_type=ORDER_TYPE_MARKET):
 
     return order
 
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
 @app.route('/webhook', methods=['POST'])
 def webhook():
     data = json.loads(request.data)
